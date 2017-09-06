@@ -1,0 +1,22 @@
+.custom-navbar {
+	margin-bottom: 24px;
+}
+
+.input-field
+.prefix.active {
+	color: 	#009688 !important;
+}
+
+input:focus {
+	border-bottom: 1px solid #009688 !important;
+	box-shadow: 0 1px 0 0 #009688 !important;
+}
+
+.add-button {
+	background-color: #009688;
+	margin-bottom: 24px;
+}
+
+.add-button:hover {
+	background-color: #009688 !important;
+}

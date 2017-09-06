@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style-puskesmas.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet">
 </head>
@@ -13,7 +14,7 @@
 	
 	<!-- navbar -->
 	<div class="custom-navbar">
-		<nav class=" blue darken-4">
+		<nav class="teal">
 			<div class="nav-wrapper container">
 				<a href="index.html" class="brand-logo">Logo</a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -39,37 +40,23 @@
 							<form class="col s10 offset-s1">
 								<div class="row">
 									<div class="input-field col s10">
-										<input id="pusksesmas" type="text" class="validate">
-										<label for="pusksesmas">Nama Pusksesmas</label>
-									</div>
-									<div class="input-field col s10">
 										<input id="date" type="text" class="datepicker">
 										<label for="date">Tanggal</label>
 									</div>
 									<div class="input-field col s10">
-										<input id="distributor" type="text" class="validate">
-										<label for="distributor">Nama distributor</label>
+										<input id="kode_obat" type="text" class="validate">
+										<label for="kode_obat">Kode Obat</label>
 									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-content">
-						<div class="row">
-							<form class="col s10 offset-s1">
-								<div class="row">
-									<div class="input-field col s8">
-										<input id="obat" type="text" class="validate">
-										<label for="obat">Nama Obat</label>
+									<div class="input-field col s10">
+										<input id="nama_obat" type="text" class="validate">
+										<label for="nama_obat">Nama Obat</label>
 									</div>
-									<div class="input-field col s5">
-										<input id="obat" type="text" class="validate">
-										<label for="obat">Jumlah</label>
+									<div class="input-field col s6">
+										<input id="jumlah" type="text" class="validate">
+										<label for="jumlah">Jumlah</label>
 									</div>
-									<!-- ganti satuan jadi select -->
-									<div class="input-field col s3">
+									<!-- ganti satuan jd select -->
+									<div class="input-field col s4">
 										<select>
 											<option value="" disabled selected>Satuan</option>
 											<option value="1">Tablet</option>
@@ -83,7 +70,8 @@
 						</div>
 					</div>
 				</div>
-				<a class="waves-effect waves-light btn add-button right"><i class="material-icons left">add</i>tambah obat</a>
+				<a class="waves-effect waves-light btn add-button right" style="margin-left: 24px"><i class="material-icons left">check</i>Simpan</a>
+				<a class="waves-effect waves-light btn add-button right"><i class="material-icons left">add</i>simpan dan tambah obat</a>
 			</div>
 		</div>
 

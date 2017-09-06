@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+</head>
+<body class="grey lighten-4">
+
+	
+	<!-- navbar -->
+	<div class="custom-navbar">
+		<nav class=" blue darken-4">
+			<div class="nav-wrapper container">
+				<a href="index.html" class="brand-logo">Logo</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="puskesmas-stok.html">Pusksemas</a></li>
+					<li><a href="obat.html">Obat</a></li>
+					<li><a href="registrasi.html">Registrasi</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<!-- filter -->
+	<!-- <h4 class="main-title">Daftar Puskesmas</h4> -->
+
+
+	<!-- body -->
+	<div class="reg-body">
+		<div class="row">
+			<div class="row col s8 offset-s2">
+				<div class="card">
+					<div class="card-content">
+						<div class="row">
+							<form class="col s10 offset-s1">
+								<div class="row">
+									<div class="input-field col s10">
+										<input id="pusksesmas" type="text" class="validate">
+										<label for="pusksesmas">Nama Pusksesmas</label>
+									</div>
+									<div class="input-field col s10">
+										<input id="date" type="text" class="datepicker">
+										<label for="date">Tanggal</label>
+									</div>
+									<div class="input-field col s10">
+										<input id="distributor" type="text" class="validate">
+										<label for="distributor">Nama distributor</label>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-content">
+						<div class="row">
+							<form class="col s10 offset-s1">
+								<div class="row">
+									<div class="input-field col s8">
+										<input id="obat" type="text" class="validate">
+										<label for="obat">Nama Obat</label>
+									</div>
+									<div class="input-field col s8">
+										<input id="obat" type="text" class="validate">
+										<label for="obat">Jumlah</label>
+									</div>
+									<div class="input-field col s8">
+										<input id="obat" type="text" class="validate">
+										<label for="obat">Satuan</label>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<a class="waves-effect waves-light btn add-button right"><i class="material-icons left">add</i>tambah obat</a>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript">
+		$('.datepicker').pickadate({
+		    selectMonths: true, // Creates a dropdown to control month
+		    selectYears: 15, // Creates a dropdown of 15 years to control year,
+		    today: 'Today',
+		    clear: 'Clear',
+		    close: 'Ok',
+		    closeOnSelect: false // Close upon selecting a date,
+		  });
+	</script>
+</body>
+</html>

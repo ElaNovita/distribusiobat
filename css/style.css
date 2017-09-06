@@ -1,0 +1,61 @@
+.custom-navbar {
+	margin-bottom: 24px;
+}
+
+.input-field
+.prefix.active {
+	color: 	#0D47A1 !important;
+}
+
+input:focus {
+	border-bottom: 1px solid #0D47A1 !important;
+	box-shadow: 0 1px 0 0 #0D47A1 !important;
+}
+
+.custom-container{
+	margin: 24px 48px 24px 48px;
+}
+
+.main-title {
+	text-align: center;
+	font-weight: 300;
+}
+
+.custom-left {
+	position: fixed;
+	width: 400px;
+}
+
+.custom-right {
+	
+}
+
+.card-active {
+	border-left: 4px solid #0D47A1;
+}
+
+.custom-table th, td {
+	text-align: center;
+}
+
+/*.custom-table a {
+	background-color: #039be5;
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+}*/
+
+.reg-body {
+	margin: 0px 48px 24px 48px;
+}
+
+.add-button {
+	background-color: #0D47A1;
+	margin-bottom: 24px;
+}
+
+.add-button:hover {
+	background-color: #0D47A1 !important;
+}

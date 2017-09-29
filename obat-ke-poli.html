@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style-puskesmas.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+</head>
+<body class="grey lighten-4">
+
+	
+	<!-- navbar -->
+	<div class="custom-navbar">
+		<nav class="teal">
+			<div class="nav-wrapper container">
+				<a href="index.html" class="brand-logo">Logo</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="puskesmas-stok.html">Pusksemas</a></li>
+					<li><a href="obat.html">Obat</a></li>
+					<li><a href="registrasi.html">Registrasi</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+	<!-- filter -->
+	<!-- <h4 class="main-title">Daftar Puskesmas</h4> -->
+
+
+	<!-- body -->
+	<div class="reg-body">
+		<div class="row">
+			<div class="row col s8 offset-s2">
+				<div class="card">
+					<div class="card-content">
+						<div class="row">
+							<form class="col s10 offset-s1">
+								<div class="row">
+									<div class="input-field col s10">
+										<input id="date" type="text" class="datepicker">
+										<label for="date">Tanggal</label>
+									</div>
+									<div class="input-field col s10">
+										<input id="kode_obat" type="text" class="validate">
+										<label for="kode_obat">Kode Obat</label>
+									</div>
+									<div class="input-field col s10">
+										<input id="nama_obat" type="text" class="validate">
+										<label for="nama_obat">Nama Obat</label>
+									</div>
+									<div class="input-field col s6">
+										<input id="jumlah" type="text" class="validate">
+										<label for="jumlah">Jumlah</label>
+									</div>
+									<!-- ganti satuan jd select -->
+									<div class="input-field col s4">
+										<select>
+											<option value="" disabled selected>Satuan</option>
+											<option value="1">Tablet</option>
+											<option value="2">Sachet</option>
+											<option value="3">Botol</option>
+										</select>
+										<!-- <label>Materialize Select</label> -->
+									</div>
+									<div class="input-field col s6">
+										<select>
+											<option value="" disabled selected>Pilih Dokter</option>
+											<option value="1">Dr. a</option>
+											<option value="2">Dr. b</option>
+											<option value="3">Dr. c</option>
+										</select>
+										<!-- <label>Materialize Select</label> -->
+									</div>
+									<div class="input-field col s6">
+										<select>
+											<option value="" disabled selected>Pilih Poli</option>
+											<option value="1">Poli Umum</option>
+											<option value="2">Poli Gigi</option>
+											<option value="3">Poli Gizi</option>
+										</select>
+										<!-- <label>Materialize Select</label> -->
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<a class="waves-effect waves-light btn add-button right" style="margin-left: 24px"><i class="material-icons left">check</i>Simpan</a>
+				<a class="waves-effect waves-light btn add-button right"><i class="material-icons left">add</i>simpan dan tambah obat</a>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript">
+		$('select').material_select();
+		$('.datepicker').pickadate({
+		    selectMonths: true, // Creates a dropdown to control month
+		    selectYears: 15, // Creates a dropdown of 15 years to control year,
+		    today: 'Today',
+		    clear: 'Clear',
+		    close: 'Ok',
+		    closeOnSelect: false // Close upon selecting a date,
+		  });
+	</script>
+</body>
+</html>

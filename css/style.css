@@ -1,5 +1,5 @@
 .custom-navbar {
-	margin-bottom: 24px;
+	/*margin-bottom: 24px;*/
 }
 
 .input-field
@@ -12,17 +12,24 @@ input:focus {
 	box-shadow: 0 1px 0 0 #0D47A1 !important;
 }
 
-.custom-container{
-	margin: 24px 48px 24px 48px;
+nav {
+	/*box-shadow: none;*/
+}
+
+.wrapper {
+	width: 100%;
+	height: 250px;
+	margin-top: -230px;
 }
 
 .main-title {
 	text-align: center;
 	font-weight: 300;
+	color: #fff;
 }
 
 .custom-left {
-	position: fixed;
+	/*position: fixed;*/
 	width: 400px;
 }
 
@@ -36,19 +43,7 @@ input:focus {
 
 .custom-table th, td {
 	text-align: center;
-}
-
-/*.custom-table a {
-	background-color: #039be5;
-    padding: 4px;
-    border-radius: 4px;
-    font-weight: 300;
-    font-size: 14px;
-    color: #fff;
-}*/
-
-.reg-body {
-	margin: 0px 48px 24px 48px;
+	/*margin: 0px 48px 24px 48px;*/
 }
 
 .add-button {
@@ -72,4 +67,30 @@ input:focus {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
+}
+
+
+.hero {
+	width: 100%;
+	height: 300px;
+	background-image: linear-gradient(0deg, rgba(0 ,0,0,0.5),rgba(0,0,0,0.5)), url("../img/pexels-photo-356054.jpeg");
+	background-size: cover;
+}
+
+.hero-input:focus {
+	color: #fff !important;
+	border-bottom: 1px solid #fff !important;
+    box-shadow: 0 1px 0 0#fff !important;
+}
+
+.input-field .prefix.active {
+     color: #fff !important; 
+}
+
+.custom-white {
+	color: #fff;
+}
+
+input:not([type]):focus:not([readonly])+label, input[type=text]:focus:not([readonly])+label, input[type=password]:focus:not([readonly])+label, input[type=email]:focus:not([readonly])+label, input[type=url]:focus:not([readonly])+label, input[type=time]:focus:not([readonly])+label, input[type=date]:focus:not([readonly])+label, input[type=datetime]:focus:not([readonly])+label, input[type=datetime-local]:focus:not([readonly])+label, input[type=tel]:focus:not([readonly])+label, input[type=number]:focus:not([readonly])+label, input[type=search]:focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #fff;
 }
